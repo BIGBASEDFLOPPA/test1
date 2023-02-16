@@ -5,20 +5,24 @@
     <title>Title</title>
 </head>
 <body>
-<script src="main.js"></script>
-
-    <div class="box"></div>
-<div class="btn-list">
-    <button id="#left">left</button>
-    <button id="#right">right</button>
+<div class="container-box">
+    <div id="box" class="box"></div>
 </div>
-
-
+<div class="btn-list">
+    <button id="left">left</button>
+    <button id="right">right</button>
+</div>
 </body>
 
 <style>
 
+    .container-box {
+        position: relative;
+        width: 100px;
+        height: 100px;
+    }
     .box{
+        position: absolute;
         width: 100px;
         height: 100px;
         background: red;
@@ -29,12 +33,9 @@
         position: center;
 
     }
-    .box.on-border {
-        left: calc(100vh - 100px);
-        right: calc(100vh - 100px);
-    }
 
 
 
 </style>
+<script src="main.js"></script>
 </html>
