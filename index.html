@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="main.js"></script>
+
+    <div class="box"></div>
+<div class="btn-list">
+    <button id="#left">left</button>
+    <button id="#right">right</button>
+</div>
+
+
+</body>
+
+<style>
+
+    .box{
+        width: 100px;
+        height: 100px;
+        background: red;
+        transition: top 2s;
+    }
+    .btn-list{
+        margin-top: 10px;
+        position: center;
+
+    }
+    .box.on-border {
+        left: calc(100vh - 100px);
+        right: calc(100vh - 100px);
+    }
+
+
+
+</style>
+</html>
