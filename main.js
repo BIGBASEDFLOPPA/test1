@@ -15,9 +15,6 @@ rightButton.addEventListener('click', function (event) {
     if (window.screen.width >= merge)
         box.style.left = merge + 'px';
 });
-box.addEventListener('click', function () {
-    this.classList.toggle('is-dropped');
-})
 
 
 
